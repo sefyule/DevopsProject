@@ -13,9 +13,10 @@ public class AnimauxService {
     @Autowired
     private AnimauxRepository animauxRepository;
 
-    /*public AnimauxService (AnimauxRepository animauxRepository){
+    public AnimauxService (AnimauxRepository animauxRepository){
         this.animauxRepository = animauxRepository;
-    }*/
+    }
+
 
     public Iterable<Animaux> getAll(){
         return animauxRepository.findAll();
