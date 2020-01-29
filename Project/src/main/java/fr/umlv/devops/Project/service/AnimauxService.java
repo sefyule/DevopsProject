@@ -10,9 +10,10 @@ import java.util.Optional;
 @Service
 public class AnimauxService {
 
-    @Autowired
+
     private AnimauxRepository animauxRepository;
 
+    @Autowired
     public AnimauxService (AnimauxRepository animauxRepository){
         this.animauxRepository = animauxRepository;
     }
@@ -34,9 +35,11 @@ public class AnimauxService {
         animauxRepository.deleteById(id);
     }
 
-   /* public Animaux updateAnimaux (Long id){
-        TODO : Update
-    }*/
+    public Animaux updateAnimaux (Long id, Animaux animaux){
+       animauxRepository.findById(id);
+       animaux.setId(id);
+       return animauxRepository.save(animaux);
+    }
 
 
 }
