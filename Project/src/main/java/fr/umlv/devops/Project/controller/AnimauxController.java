@@ -33,10 +33,10 @@ public class AnimauxController {
         animauxService.deleteAnimaux(id);
     }
 
-    /*@PostMapping ("animaux/{id}")
+    @PostMapping ("animaux/{id}")
     public Animaux updateAnimaux (@PathVariable Long id, @RequestBody Animaux animaux){
-        return animauxService.updateAnimaux()
-    }*/
+        return animauxService.updateAnimaux(id,animaux);
+    }
 
 
 

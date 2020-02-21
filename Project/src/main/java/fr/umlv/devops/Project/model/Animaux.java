@@ -14,7 +14,7 @@ import static javax.persistence.GenerationType.AUTO;
 public class Animaux {
 
     @Id
-    @GeneratedValue(strategy = AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
     private String sexe;
@@ -82,5 +82,25 @@ public class Animaux {
 
     public String getSigneDistinctif() {
         return signeDistinctif;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSexe(String sexe) {
+        this.sexe = sexe;
+    }
+
+    public void setSigneDistinctif(String signeDistinctif) {
+        this.signeDistinctif = signeDistinctif;
+    }
+
+    public void setDateDepart(Date dateDepart) {
+        this.dateDepart = dateDepart;
     }
 }
