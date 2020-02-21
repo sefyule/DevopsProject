@@ -34,8 +34,8 @@ public class AnimauxService {
         animauxRepository.deleteById(id);
     }
 
-   /* public Animaux updateAnimaux (Long id){
-        TODO : Update
+   /*public Animaux updateAnimaux (Long id){
+
     }*/
 
 
