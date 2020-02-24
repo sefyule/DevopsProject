@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
+                bat "cd Project"
                 bat "mvn clean"
             }
         }
