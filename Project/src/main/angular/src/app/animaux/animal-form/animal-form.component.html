@@ -1,0 +1,31 @@
+<form [formGroup]="profileForm">
+
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+
+  <label>
+    Sexe
+    <input type="text" formControlName="sexe">
+  </label>
+
+  <label>
+    Signe dinstinctif
+    <input type="text" formControlName="signeDistinctif">
+  </label>
+
+  <label>
+    Date Arrive :
+    <input type="text" formControlName="dateArrive">
+  </label>
+
+  <label>
+    Date Depart :
+    <input type="text" formControlName="dateDepart">
+  </label>
+
+  <button (click)="onSubmit()">+</button>
+</form>
+
+

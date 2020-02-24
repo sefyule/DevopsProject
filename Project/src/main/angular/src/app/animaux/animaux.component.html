@@ -1,0 +1,12 @@
+<app-animal-form></app-animal-form>
+<ul class="animaux">
+  <li *ngFor="let a of animaux">
+    <app-animal [animal]="a" (deleteAnimal)="refreshAnimaux($event)">
+
+    </app-animal>
+  </li>
+
+
+
+</ul>
+y
