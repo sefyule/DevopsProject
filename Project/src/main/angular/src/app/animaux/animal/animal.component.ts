@@ -9,10 +9,10 @@ import {AnimalService} from "../animal.service";
 })
 export class AnimalComponent implements OnInit {
 
-  @Input
+  @Input()
   animal: Animal;
 
-  @Output
+  @Output()
   deleteAnimal = new EventEmitter<Animal>();
 
   constructor(private animalService: AnimalService) { }

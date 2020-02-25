@@ -20,7 +20,7 @@ export class AnimalFormComponent implements OnInit {
 
   constructor(private animalService: AnimalService) { }
 
-  O@Output()
+  @Output()
   createAnimal = new EventEmitter<Animal>();
 
   onSubmit(){
