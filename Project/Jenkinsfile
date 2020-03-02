@@ -27,11 +27,6 @@ pipeline {
                 }
             }
         }
-        stage('test ls'){
-                    steps{
-                        sh "ls -R"
-                    }
-                }
         stage('copy app'){
             steps{
                 sh "cp Project/target/Project-0.0.1-SNAPSHOT.jar ./"
