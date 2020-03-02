@@ -1,4 +1,4 @@
-<app-animal-form></app-animal-form>
+<app-animal-form (createAnimal)="refreshAnimaux($event)"></app-animal-form>
 <ul class="animaux">
   <li *ngFor="let a of animaux">
     <app-animal [animal]="a" (deleteAnimal)="refreshAnimaux($event)">
@@ -9,4 +9,4 @@
 
 
 </ul>
-y
+

@@ -13,7 +13,7 @@ export class AnimalFormComponent implements OnInit {
   profileForm = new FormGroup({
     name: new FormControl(''),
     sexe: new FormControl(''),
-    signeDistrinctif : new FormControl(''),
+    signeDistinctif : new FormControl(''),
     dateArrive : new FormControl(''),
     dateDepart : new FormControl(''),
   });
