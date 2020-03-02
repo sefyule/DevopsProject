@@ -34,7 +34,7 @@ pipeline {
                 }
         stage('copy app'){
             steps{
-                sh "cp Project/target/test-classes/Project-0.0.1-SNAPSHOT.jar ./"
+                sh "cp target/Project-0.0.1-SNAPSHOT.jar ./"
             }
         }
     }
