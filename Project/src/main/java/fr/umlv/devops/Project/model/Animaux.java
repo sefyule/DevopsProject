@@ -23,6 +23,10 @@ public class Animaux {
     private Date dateDepart;
 
     public Animaux(){
+
+    }
+
+    public Animaux(String name, String m, Object o, Object o1){
     }
 
     public Animaux(String name, String sexe, String signeDistinctif, Date dateArrive, Date dateDepart){
