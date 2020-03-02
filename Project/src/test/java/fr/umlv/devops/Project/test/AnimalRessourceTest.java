@@ -1,4 +1,4 @@
-package fr.umlv.devops.Project;
+package fr.umlv.devops.Project.test;
 
 import fr.umlv.devops.Project.model.Animaux;
 import fr.umlv.devops.Project.repository.AnimauxRepository;
